@@ -27,7 +27,7 @@ var schema = buildSchema(`
     todo: String
     done: String
   }
-  "
+
   type Query {
     list: [Item]
    
@@ -37,9 +37,6 @@ var schema = buildSchema(`
     addtodo(input: InputItem): Item
     clearAll: [Item]
   }
-
- 
-
 `);
 
 // The root provides a resolver function for each API endpoint
